@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "file_uploads",
+  "info": {
+    "name": "fileUpload"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fileName": {
+      "type": "string"
+    },
+    "file": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

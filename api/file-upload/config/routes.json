@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/file-upload",
+      "handler": "file-upload.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/file-upload",
+      "handler": "file-upload.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/file-upload",
+      "handler": "file-upload.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
