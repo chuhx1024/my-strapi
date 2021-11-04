@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/upload-files",
+      "handler": "upload-files.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/upload-files/count",
+      "handler": "upload-files.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/upload-files/:id",
+      "handler": "upload-files.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/upload-files",
+      "handler": "upload-files.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/upload-files/:id",
+      "handler": "upload-files.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/upload-files/:id",
+      "handler": "upload-files.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
